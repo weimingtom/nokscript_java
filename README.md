@@ -12,4 +12,5 @@ http://www.nokuno.jp/secret/program1.html
 
 ## History  
 * 2017-08-19: Lexer is done.  
-* 2011-09-28: Oldest file modification.  
+* 2012-01-09: Java project first created.  
+* 2011-09-28: Oldest vc6 project file modification date.  
