@@ -14,10 +14,11 @@ public class Token {
 	public void Printf() {
 		//FIXME:
 		//Outputf("%s\n",m_pString);
-		System.out.println(m_pString + "\n");
+		System.out.println(m_pString);
 	}
 
 	public int Cut(String str, int pStr, String former) {
+		//System.out.println("========>Cut : " + str.length() + ", pStr==" + pStr + ",former:" + former);
 		if (str == null || str.length() == 0) {
 			m_pString = null;
 			return -1;
@@ -29,6 +30,7 @@ public class Token {
 				return -1;
 			}
 		}
+		//System.out.println("=========>XXX2 " + (pFront));
 		if (str.indexOf("/*", pFront) == pFront) {
 			int p = str.indexOf("*/", pFront);
 			if (p == -1) {
@@ -48,7 +50,7 @@ public class Token {
 			!Misc.IsConst(former) && 
 			!Misc.IsVar(former) && 
 			former.compareTo(")") != 0)) {
-			int pRear = Misc.strstr2(str.substring(pFront + 1), ".0123456789");
+			int pRear = Misc.strstr2(str.substring(pFront + 1), pFront + 1, ".0123456789");
 			m_pString = str.substring(pFront, pRear);
 			return pRear;
 		} else if (str.indexOf("\"", pFront) == pFront) {
@@ -61,14 +63,15 @@ public class Token {
 			m_pString = str.substring(pFront, pFront + 2);
 			return pFront + 2;
 		} else if (Misc.chrstr(str.charAt(pFront), "()+-*=/<>&|!#%'~^[]{}@`?:;,.")) {
+			//System.out.println("=========>XXX " + (pFront + 1));
 			m_pString = str.substring(pFront, pFront + 1);
 			return pFront + 1;
 		} else if (Misc.chrstr(str.charAt(pFront), "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_")) {
-			int pRear = Misc.strstr2(str.substring(pFront), "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789");
+			int pRear = Misc.strstr2(str.substring(pFront), pFront, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789");
 			m_pString = str.substring(pFront, pRear);
 			return pRear;
 		} else {
-			MBF_ERR(str.charAt(pFront) + ":token cut faild¡£");
+			MBF_ERR(str.charAt(pFront) + ":token cut faildï¿½ï¿½");
 			return -1;
 		}
 	}

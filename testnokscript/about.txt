@@ -1,0 +1,12 @@
+see
+F:\svn\nokscript
+
+strdup or _strdup ?
+http://stackoverflow.com/questions/7582394/strdup-or-strdup
+
+ISO 'for' variable
+-fpermissive
+
+CYGWIN not fullfill 0 !!!
+char *buffer = new char[size + 1];
+buffer[size] = 0;

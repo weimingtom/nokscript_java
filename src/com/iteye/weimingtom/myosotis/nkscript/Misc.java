@@ -18,10 +18,10 @@ public class Misc {
 	
 	public static boolean IsVar(String str) { 
 		return chrstr(str.charAt(0), "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_") &&
-			strstr2(str, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789") == str.length();
+			strstr2(str, 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789") == str.length();
 	}
 	
-	public static int strstr2(String str, String chrArray) {
+	public static int strstr2(String str, int strpos, String chrArray) {
 		int p1;
 		for (p1 = 0; p1 < str.length(); ++p1) {
 			boolean ret = true;
@@ -31,10 +31,10 @@ public class Misc {
 				}
 			}
 			if (ret) {
-				return p1;
+				return strpos + p1;
 			}
 		}
-		return p1;
+		return strpos + p1;
 	}
 	
 	public static boolean strstrstr(String str1, String str2, char c) {

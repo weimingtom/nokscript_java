@@ -1,0 +1,65 @@
+public class Token {
+	private String m_pString = null;
+	
+	public Token() {
+		m_pString = null;
+	}
+	
+	public String GetStr() {
+		return m_pString;
+	}
+	
+	public void Printf() {
+		//FIXME:
+		//Outputf("%s\n",m_pString);
+--------->		System.out.println(m_pString + "\n");
+	}
+	
+------------------------------------
+NkScript
+
+--------->		if (false) {
+		for (int i = 0; i < tArray.GetArray().size() && i >= 0; ++i) {
+			if ("class".equals(tArray.GetArray().get(i).GetStr())) {
+				pCDefine.add(new ClassStruct(tArray, i + 1));
+				i = tArray.GetCorrespondence(i + 2, "{", "}");
+			} else if (Misc.IsVar(tArray.GetArray().get(i).GetStr())) {
+				int kakko = tArray.GetCorrespondence(i + 1, "(", ")");
+				if (kakko < 0) {
+					MBF_ERR(tArray.GetArray().get(i).GetStr() + ": function not found");
+					throw new Exception();
+				}
+				int tyukakko = tArray.GetCorrespondence(kakko + 1, "{", "}");
+				if (tyukakko < 0) {
+					MBF_ERR(tArray.GetArray().get(i).GetStr() + ":function {} not found.");
+					throw new Exception();
+				}
+				pFunc.add(new FuncStruct(tArray, i));
+				i = tyukakko;
+			} else if (";".equals(tArray.GetArray().get(i).GetStr())) {
+				MBF_ERR(tArray.GetArray().get(i).GetStr() + ": not recognized.");
+				throw new Exception();
+			}
+		}
+		}
+		
+--------------------------------
+
+		try {
+			istr = new FileInputStream(filename);
+			reader = new InputStreamReader(istr, "utf-8");
+			buf = new BufferedReader(reader);
+			String line;
+			while (null != (line = buf.readLine())) {
+				sb.append(line);
+				sb.append("\r\n"); //FXIME:the return in java is \n, but in c is \r\n, see while (Misc.chrstr(str.charAt(pFront), " \t\n\r") != false) 
+			}
+			buffer = sb.toString();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+		
+		
+------------------------------
+
+

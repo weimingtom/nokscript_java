@@ -29,7 +29,9 @@ public class NkScript {
 			String line;
 			while (null != (line = buf.readLine())) {
 				sb.append(line);
-				sb.append("\n");
+				sb.append("\r\n"); 
+				//FXIME:the return in java is \n, but in c is \r\n, see Token::Cut()
+				//while (Misc.chrstr(str.charAt(pFront), " \t\n\r") != false) 
 			}
 			buffer = sb.toString();
 		} catch (IOException e) {
@@ -54,7 +56,7 @@ public class NkScript {
 		//ReadFile(buffer, size, filename);
 		//printf("%s\n", buffer);
 		if (buffer == null) {
-			MBF_ERR(filename + "²»´æÔÚ¡£");
+			MBF_ERR(filename + " not exists");
 			throw new Exception();
 		}
 		TokenArray tArray = new TokenArray();
@@ -63,6 +65,7 @@ public class NkScript {
 		//FIXME:
 		tArray.allprintf();
 		System.out.println("" + tArray.GetArray().size());
+		if (false) {
 		for (int i = 0; i < tArray.GetArray().size() && i >= 0; ++i) {
 			if ("class".equals(tArray.GetArray().get(i).GetStr())) {
 				pCDefine.add(new ClassStruct(tArray, i + 1));
@@ -84,6 +87,7 @@ public class NkScript {
 				MBF_ERR(tArray.GetArray().get(i).GetStr() + ": not recognized.");
 				throw new Exception();
 			}
+		}
 		}
 		//SAFE_DELETE_ARRAY(buffer);
 	}

@@ -1,0 +1,24 @@
+# cd /cygdrive/D/ugame_c/testnokscript
+# make
+
+CC := gcc
+CPP := /cygdrive/C/cygwin/home/Administrator/android-ndk-r5b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++ --sysroot=C:/cygwin/home/Administrator/android-ndk-r5b/platforms/android-8/arch-arm -L"C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\libs\armeabi" -L"C:/cygwin/home/Administrator/android-ndk-r5b/platforms/android-8/arch-arm/usr/lib" -I"C:/cygwin/home/Administrator/android-ndk-r5b/platforms/android-8/arch-arm/usr/include" -I"C:/cygwin/home/Administrator/android-ndk-r5b/sources/cxx-stl/gnu-libstdc++/include" -I"C:/cygwin/home/Administrator/android-ndk-r5b/sources/cxx-stl/gnu-libstdc++/libs/armeabi/include"
+
+LD := ld
+RM := rm -rf
+
+CPPFLAGS := -g
+OBJS := CtrlFunc.o DxFunc.o HelpFunc.o
+OBJS += Main.o MakeFunc.o Misc.o 
+OBJS += NkScript.o OpFunc.o 
+
+all : nokscript
+
+nokscript : $(OBJS)
+	$(CPP) $(CPPFLAGS) $(OBJS) -lc -lm -lstdc++ -o $@ 
+
+%.o : %.cpp
+	$(CPP) $(CPPFLAGS) -o $@ -c $<
+
+clean :
+	$(RM) nokscript *.o *.exe

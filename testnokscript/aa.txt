@@ -1,0 +1,209 @@
+/cygdrive/C/cygwin/home/Administrator/android-ndk-r5b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-gcc --sysroot="C:/cygwin/home/Administrator/android-ndk-r5b" -I"C:/cygwin/home/Administrator/android-ndk-r5b/platforms/android-8/arch-arm/usr/include" -I"C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include" -L"C:/cygwin/home/Administrator/android-ndk-r5b/platforms/android-8/arch-arm/usr/lib" -L"C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\libs\armeabi" -g -o CtrlFunc.o -c CtrlFunc.cpp
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:60:28: error: bits/c++config.h: No such file or directory
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:62,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/allocator.h:48:31: error: bits/c++allocator.h: No such file or directory
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:61,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/cstddef:49: error: expected constructor, destructor, or type conversion before '(' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/cstddef:54: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:62,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/functexcept.h:91: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:63,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:74: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:87: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:110: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:125: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:145: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:152: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:159: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:166: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:198: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:205: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:212: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:219: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:226: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:233: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:240: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:247: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:265: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:272: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:279: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:296: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:310: error: '__gnu_cxx' was not declared in this scope
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:311: error: template argument 1 is invalid
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:355: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:378: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:385: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:392: error: '__true_type' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/cpp_type_traits.h:417: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:64,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:45: error: '__enable_if' is not a template
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:64: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:64: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:64: error: template argument 1 is invalid
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:64: error: typedef name may not be a nested-name-specifier
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:64: error: expected ';' before '>' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:67: error: '__if_type' has not been declared
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:107: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:107: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:107: error: template argument 1 is invalid
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:107: error: typedef name may not be a nested-name-specifier
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:107: error: expected ';' before '>' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:110: error: '__if_type' has not been declared
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:158: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:158: error: expected primary-expression before '>' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:158: error: expected constructor, destructor, or type conversion before '>' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:163: error: '__promote' is not a template
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:202: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:65,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:66: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:69: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:72: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:75: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:101: error: '__are_same' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:101: error: expected primary-expression before ',' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:101: error: a comma operator cannot appear in a constant-expression
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:101: error: expected primary-expression before 'float'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:101: error: expected ')' before 'float'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:101: error: expected ')' before ';' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:105: error: '__are_same' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:105: error: expected primary-expression before ',' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:105: error: a comma operator cannot appear in a constant-expression
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:105: error: expected primary-expression before 'float'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:105: error: expected ')' before 'float'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:106: error: '__are_same' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:106: error: expected primary-expression before ',' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:106: error: a comma operator cannot appear in a constant-expression
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:106: error: expected primary-expression before 'float'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:106: error: expected ')' before 'float'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: '__is_integer' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: wrong number of template arguments (1, should be 3)
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:51: error: provided for 'template<bool _Cond, class _Iftrue, class _Iffalse> struct __conditional_type'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: expected '{' before '::' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: invalid type in declaration before ',' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: explicit qualification in declaration of '__value'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:123: error: template declaration of 'int __value'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/numeric_traits.h:128: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:60,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:66,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/move.h:96: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:66,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:146: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:146: error: 'bool operator==(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:152: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:152: error: 'bool operator<(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:159: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:159: error: 'bool operator!=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:165: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:165: error: 'bool operator>(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:171: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:171: error: 'bool operator<=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:177: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:177: error: 'bool operator>=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:214: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_pair.h:259: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:67,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_types.h:83: error: expected class-name before '{' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_types.h:165: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:68,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h: In function 'typename iterator_traits<_Iterator>::difference_type distance(_InputIterator, _InputIterator)':
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h:113: error: '__distance' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h:114: error: '__iterator_category' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h: At global scope:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h:119: error: 'input_iterator_tag' has not been declared
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h: In function 'void advance(_InputIterator&, _Distance)':
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h:172: error: '__advance' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h:172: error: '__iterator_category' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h: At global scope:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator_base_funcs.h:195: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:69,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:278: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:279: error: 'bool operator==(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:284: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:285: error: 'bool operator<(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:290: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:291: error: 'bool operator!=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:296: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:297: error: 'bool operator>(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:302: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:303: error: 'bool operator<=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:308: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:309: error: 'bool operator>=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:313: error: expected nested-name-specifier before 'reverse_iterator'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:313: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:319: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:328: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:329: error: 'bool operator==(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:334: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:335: error: 'bool operator<(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:340: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:341: error: 'bool operator!=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:346: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:347: error: 'bool operator>(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:352: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:353: error: 'bool operator<=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:358: error: expected ',' or '...' before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:359: error: 'bool operator>=(int)' must have an argument of class or enumerated type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:370: error: expected nested-name-specifier before 'reverse_iterator'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:370: error: expected initializer before '<' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:654: error: '_GLIBCXX_END_NAMESPACE' does not name a type
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:666: error: 'std::iterator' has not been declared
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:692: error: '__are_same' is not a member of 'std'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:692: error: a comma operator cannot appear in a constant-expression
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:692: error: '::__value' has not been declared
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:693: error: wrong number of template arguments (2, should be 1)
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/ext/type_traits.h:45: error: provided for 'template<class _Tp> struct __enable_if'
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:693: error: expected '(' before '>' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:693: error: template argument 2 is invalid
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:693: error: expected '::' before '&' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:693: error: expected identifier before '&' token
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h: In constructor '__normal_iterator<_Iterator, _Container>::__normal_iterator(const int&)':
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_iterator.h:694: error: request for member 'base' in '__i', which is of non-class type 'const int'
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_algobase.h:71,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/list:61,
+                 from NkScript.h:7,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/debug/debug.h: At global scope:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/debug/debug.h:47: error: expected constructor, destructor, or type conversion before 'namespace'
+In file included from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/new:40,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/bits/stl_construct.h:60,
+                 from C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/vector:63,
+                 from NkScript.h:8,
+                 from CtrlFunc.cpp:2:
+C:\cygwin\home\Administrator\android-ndk-r5b\sources\cxx-stl\gnu-libstdc++\include/exception:35: error: expected declaration before end of line
+make: *** [CtrlFunc.o] 错误 1
