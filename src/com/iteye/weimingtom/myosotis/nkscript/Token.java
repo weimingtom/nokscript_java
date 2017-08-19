@@ -71,7 +71,7 @@ public class Token {
 			m_pString = str.substring(pFront, pRear);
 			return pRear;
 		} else {
-			MBF_ERR(str.charAt(pFront) + ":token cut faild��");
+			MBF_ERR(str.charAt(pFront) + ":token recognized fail");
 			return -1;
 		}
 	}

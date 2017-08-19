@@ -27,12 +27,12 @@ public class MakeFunc {
 			}
 		} else if ("if".equals(pTokenArray.GetArray().get(i).GetStr())) {
 			if ("(".equals(pTokenArray.GetArray().get(i + 1).GetStr())) {
-				MB_ERR("if没有(。");
+				MB_ERR("if hasn't (");
 				return null;
 			}
 			int last2 = pTokenArray.GetCorrespondence(i + 1, "(", ")");
 			if (last2 < 0) {
-				MB_ERR("if没有)。");
+				MB_ERR("if hasn't )");
 				return null;
 			}
 			Func pJoken = NewFunc(pBlock, pTokenArray, i + 2, last2);	
@@ -50,15 +50,15 @@ public class MakeFunc {
 			return null;
 		} else if ("while".equals(pTokenArray.GetArray().get(i).GetStr())) {
 			if ("(".equals(pTokenArray.GetArray().get(i + 1).GetStr())) {
-				MB_ERR("while没有(。");
+				MB_ERR("while hasn't (");
 				return null;
 			}
 			int last2 = pTokenArray.GetCorrespondence(i + 1, "(", ")");
 			if (last2 < 0) {
-				MB_ERR("while没有)。");
+				MB_ERR("while hasn't )");
 				return null;
 			}
-			//条件式
+			//锟斤拷锟斤拷式
 			Func pJoken = NewFunc(pBlock, pTokenArray, i + 2, last2);	
 			Func pFunc = NewFunc2(pBlock, pTokenArray, last2 + 1, last);
 			if (pJoken != null && pFunc != null) {
@@ -69,22 +69,22 @@ public class MakeFunc {
 			return null;
 		} else if ("for".equals(pTokenArray.GetArray().get(i).GetStr())) {
 			if ("(".equals(pTokenArray.GetArray().get(i + 1).GetStr())) {
-				MB_ERR("for没有(。");
+				MB_ERR("for hasn't (");
 				return null;
 			}
 			int last2 = pTokenArray.GetCorrespondence(i + 1, "(", ")");
 			if (last2 < 0) {
-				MB_ERR("for没有)。");
+				MB_ERR("for hasn't )");
 				return null;
 			}
 			int colon1 = pTokenArray.Search(i + 1, ";");
 			if (colon1 < 0) {
-				MB_ERR("for没有;。");
+				MB_ERR("for hasn't ;");
 				return null;
 			}
 			int colon2 = pTokenArray.Search(colon1 + 1, ";");
 			if (colon2 < 0) {
-				MB_ERR("for没有;。");
+				MB_ERR("for hasn't ;");
 				return null;
 			}
 			Func pFirst = NewFunc(pBlock, pTokenArray, i + 2, colon1);
@@ -103,7 +103,7 @@ public class MakeFunc {
 		} else if ("break".equals(pTokenArray.GetArray().get(i).GetStr())) {
 			int gyou = pTokenArray.Search(i, ";");
 			if (gyou != i + 1) {
-				MB_ERR("break没有;。");
+				MB_ERR("break hasn't ;");
 				return null;
 			}
 			last[0] = gyou;
@@ -112,7 +112,7 @@ public class MakeFunc {
 			int gyou = pTokenArray.Search(i, ";");
 			last[0] = gyou;
 			if (gyou == -1) {
-				MB_ERR("没有;。");
+				MB_ERR("there isn't ;");
 				return null;
 			}
 			Func pFunc = NewFunc(pBlock, pTokenArray, i, gyou);
@@ -266,10 +266,10 @@ public class MakeFunc {
 			pFunc1 = null;
 			pFunc2 = null;
 			MBF_ERR(pTokenArray.GetArray().get(index).GetStr() + 
-				": 这个运算符未实现。");
+				": this operator hasn't been implemented");
 			return null;
 		}
-		//确认标识符
+		//operator recognition
 		if (Misc.IsVar(pTokenArray.GetArray().get(i).GetStr())) {
 			Var pVar = pBlock.NewVariable(pTokenArray.GetArray().get(i).GetStr());
 			if (pVar != null) {
@@ -282,12 +282,12 @@ public class MakeFunc {
 			if ("(".equals(pTokenArray.GetArray().get(i + 1).GetStr()) && 
 				corKakko != -1) {
 				if (corKakko != last - 1) {
-					MBF_ERR(pTokenArray.GetArray().get(i).GetStr() + ":没有；。");
+					MBF_ERR(pTokenArray.GetArray().get(i).GetStr() + ":not exist");
 					return null;
 				}
 				{
-					//无参数函数
-					int H1L = pTokenArray.GetCorrespondence(first + 1, "(", ")"); //（に対応する）
+					//no parameters
+					int H1L = pTokenArray.GetCorrespondence(first + 1, "(", ")"); //pair
 					if (H1L < 0) {
 						return null;
 					}
@@ -319,7 +319,7 @@ public class MakeFunc {
 					if (H1F >= last) {
 						return null;
 					}
-					int H1L = pTokenArray.GetCorrespondence(first+1, "(", ")");//（に対応する）
+					int H1L = pTokenArray.GetCorrespondence(first+1, "(", ")");//pair
 					if (H1L < 0) {
 						return null;
 					}
@@ -485,10 +485,10 @@ public class MakeFunc {
 					}
 				}
 				{
-					//用向量传递变量给多参数函数
+					//parameter is vector
 					int start = i + 2;
 					int final_;
-					List<Func> funcarray = new ArrayList<Func>();//ＮＥＷした関数リスト
+					List<Func> funcarray = new ArrayList<Func>();//function list
 					while ((final_ = pTokenArray.SearchCommma(start,corKakko)) > 0) {
 						Func pFunc = NewFunc(pBlock, pTokenArray, start, final_);
 						if (pFunc == null) {
@@ -501,7 +501,7 @@ public class MakeFunc {
 						start = final_ + 1;
 					}
 					funcarray.add(NewFunc(pBlock, pTokenArray, start, corKakko));
-					//funcarray初期化完了
+					//funcarray init over
 					if ("Shot".equals(pTokenArray.GetArray().get(i).GetStr())) {
 						return new Shot(funcarray);
 					} else if ("DrawImage2".equals(pTokenArray.GetArray().get(i).GetStr())) {
@@ -511,17 +511,17 @@ public class MakeFunc {
 					}
 				}
 				MBF_ERR(pTokenArray.GetArray().get(i).GetStr() + 
-						":不存在的函数。");
+						":not existed function");
 				return null;
 			} else {
 				MBF_ERR(pTokenArray.GetArray().get(i).GetStr() + 
-					":函数没有正确的格式。");
+					":function not correct");
 				return null;
 			}
 		} else {
 			MBF_ERR(pTokenArray.GetArray().get(i).GetStr() + 
 					pTokenArray.GetArray().get(last).GetStr() + 
-					":解释不正确。");
+					":content not correct");
 			return null;
 		}
 	}

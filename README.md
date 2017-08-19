@@ -9,3 +9,7 @@ http://www.nokuno.jp/secret/program1.html
 
 ## Status  
 **WIP**  
+
+## History  
+* 2017-08-19: Lexer is done.  
+* 2011-09-28: Oldest file modification.  
